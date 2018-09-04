@@ -1,5 +1,7 @@
 # DBWBot
 
+[![PyPI](https://img.shields.io/badge/python-3.6-blue.svg)](https://pypi.python.org/pypi/discord.py/)
+
 Simple open source Discord bot, built with Discord.py
 
 To install, use
