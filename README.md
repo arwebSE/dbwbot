@@ -4,7 +4,7 @@ Simple open source Discord bot, built with Discord.py
 
 To install, use
 ```console
-sudo pip install -r requirements.txt
+sudo pip3 install -r requirements.txt
 ```
 
 Before launch you must modify `data/config.json.txt` with your own <a href="https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token">discord bot token</a>,
