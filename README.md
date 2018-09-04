@@ -19,7 +19,5 @@ Add the bot to your server using the following link: https://discordapp.com/api/
 
 If you're missing pip, do the following (debian):
 ```console
-sudo apt-get install python-setuptools python-dev build-essential
-sudo pip install --upgrade pip
-sudo pip install --upgrade virtualenv
+sudo apt-get install python3-pip
 ```
