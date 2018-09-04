@@ -10,3 +10,10 @@ and remove the file extension so it's only "config.json".
 To run the bot, launch using "python3 launch.py"
 
 Add the bot to your server using "https://discordapp.com/api/oauth2/authorize?client_id=486241051019968544&permissions=268438560&scope=bot"
+
+If you're missing pip, do the following (debian):
+```console
+sudo apt-get install python-setuptools python-dev build-essential
+sudo pip install --upgrade pip
+sudo pip install --upgrade pip
+```
