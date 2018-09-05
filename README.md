@@ -3,7 +3,9 @@
 [![PyPI](https://img.shields.io/badge/python-3.6-blue.svg)](https://pypi.python.org/pypi/discord.py/)
 
 A simple open source Discord bot, built with Discord.py.
+
 Built primary for students of BTH, but feel free to modify / use for inspo.
+
 
 Current functions:
 
