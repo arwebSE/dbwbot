@@ -42,3 +42,13 @@ Crontab example:
 ```
 */5 * * * * su - dbwbot -c 'cd /home/dbwbot/dbwbot && /usr/bin/python3.6 launch.py'
 ```
+
+
+--------------------
+
+Credits:
+* Discord: https://discordapp.com/
+* Rapptz's Discord.py: https://github.com/Rapptz/discord.py
+* SourSpoon's Discord.py template: https://github.com/SourSpoon/Discord.py-Template
+* Myself: http://arweb.se
+* Any future contributor! (you? =))
