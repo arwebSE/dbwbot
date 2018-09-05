@@ -6,6 +6,8 @@ A simple open source Discord bot, built with Discord.py.
 
 Built primary for students of BTH, but feel free to modify / use for inspo.
 
+Requires python3.6+
+
 
 Current functions:
 
@@ -25,7 +27,7 @@ and remove the file extension so it's only named `config.json`.
 
 To run the bot, launch using
 ```python
-python3 launch.py
+python3.6 launch.py
 ```
 
 Add the bot to your server using the following link: https://discordapp.com/api/oauth2/authorize?client_id=486241051019968544&permissions=268438560&scope=bot
