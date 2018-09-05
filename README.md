@@ -23,3 +23,9 @@ If you're missing pip, do the following (debian):
 ```console
 sudo apt-get install python3-pip
 ```
+
+
+Crontab example:
+```
+*/5 * * * * su - dbwbot -c 'cd /home/dbwbot/dbwbot && /usr/bin/python3.6 launch.py'
+```
