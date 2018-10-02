@@ -1,8 +1,12 @@
 import discord
 from discord.ext import commands
 from discord.utils import get
+from tendo import singleton
 
 import asyncio
+
+# Prevent multiple instances
+me = singleton.SingleInstance()
 
 class Essentials(discord.Client):
     def __init__(self, bot):
