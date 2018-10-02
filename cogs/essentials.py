@@ -1,7 +1,10 @@
+import sys
 import discord
 from discord.ext import commands
 from discord.utils import get
 import asyncio
+from selenium import webdriver
+driver = webdriver.Chrome('usr/bin/chromedriver')
 
 class Essentials(discord.Client):
     def __init__(self, bot):
@@ -34,6 +37,15 @@ class Essentials(discord.Client):
     async def dbwbot(self, ctx, *args: str):
         """Shows this message."""
         return await commands.bot._default_help_command(ctx, *args)
+
+    @commands.command(pass_context=True)
+    async def dbwcal(self, ctx):
+        """Screenshot."""
+        driver.get('https://www.spotify.com')
+        screenshot = driver.save_screenshot('my_screenshot.png')
+        driver.quit()
+        print(f"screenshot saved.")
+        return " "
 
 def setup(bot):
     bot.add_cog(Essentials(bot))
