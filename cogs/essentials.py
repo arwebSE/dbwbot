@@ -1,16 +1,13 @@
 import discord
 from discord.ext import commands
 from discord.utils import get
-from tendo import singleton
-
 import asyncio
-
-# Prevent multiple instances
-me = singleton.SingleInstance()
 
 class Essentials(discord.Client):
     def __init__(self, bot):
         self.bot = bot
+        #remove default command
+        bot.remove_command('help')
 
     @commands.command(pass_context=True)
     async def studenttyp(self, ctx, role_: str):
@@ -32,6 +29,11 @@ class Essentials(discord.Client):
                 print(f"Unauthorised role given!")
         else:
             print(f"Role does not exist!")
+
+    @commands.command(pass_context=True)
+    async def dbwbot(self, ctx, *args: str):
+        """Shows this message."""
+        return await commands.bot._default_help_command(ctx, *args)
 
 def setup(bot):
     bot.add_cog(Essentials(bot))

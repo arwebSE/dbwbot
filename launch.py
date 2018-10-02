@@ -7,6 +7,10 @@ from pathlib import Path
 import discord
 from discord.ext import commands
 
+from tendo import singleton
+# Prevent multiple instances
+me = singleton.SingleInstance()
+
 
 def config_load():
     with open('data/config.json', 'r', encoding='utf-8') as doc:
@@ -93,7 +97,6 @@ class Bot(commands.Bot):
         if message.author.bot:
             return  # ignore all bots
         await self.process_commands(message)
-
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
